@@ -1,3 +1,235 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body{
+    margin: 0% 15%;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+    background-color: white;
+    border: solid gray 2px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    border: solid gray 2px;
+}
+
+header a{
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    border: solid red 2px;
+}
+
+header a:hover{
+    color: black;
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.CTASection{
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 3%;
+    margin: 6% 0px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.CTAbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.CTA{
+    display: flex;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10%;
+    color: grey;
+    background-color: white;
+}
+
+.CTASection button:hover{
+    color: white;
+    background-color: grey;
+}
+
+.image {
+    display: flex;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+.content{
+    /* display: inline-block;
+    position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentCard1, .contentCard2{
+    width: 48%;
+    display: inline-block;
+    margin: 4% 7px;
+}
+
+.contentCard3, .contentCard4, .contentCard5{
+    width: 32%;
+    display: inline-block;
+    margin: 4% 4px;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+footer{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 3% 0;
+    line-height: 2;
+}
+
+address{
+    margin-top: -4px;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.copyright{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.contact{
+    line-height: 2;
+}
+
+p {
+    line-height: 1.2;
+}
+
+/* tablet view */
+
+@media (max-width:800px){
+    body{
+        margin: 0 3%;
+    }
+
+    .image{
+        display: none;
+    }
+
+    header{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 5%;
+    background-color: white;
+    }
+
+    header .logo{
+        justify-content: center;
+        padding-bottom: 4%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;       
+        /* margin-right: 190px;  */
+        /* padding-right: 400px;  */
+    }
+
+    nav a{
+        /* display: flex;
+        justify-content: center; */
+    }
+}
