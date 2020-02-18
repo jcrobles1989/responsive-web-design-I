@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html, body {
@@ -75,21 +75,18 @@ header{
     align-items: center;
     padding-top: 3%;
     background-color: white;
-    border: solid gray 2px;
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
     width: 75%;
-    border: solid gray 2px;
 }
 
 header a{
     display: flex;
     color: grey;
     text-decoration: none;
-    border: solid red 2px;
 }
 
 header a:hover{
@@ -106,20 +103,19 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     padding: 4% 3%;
-    margin: 6% 0px;
-    position: relative;
-    width: 100%;
-    margin-bottom: 10%;
+    margin: 2% 0px;
+    width: 0 auto;
 }
 
 .CTAbutton {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
+
 .CTA{
-    display: flex;
     font-size: 80px;
     text-align: center;
     margin-top: 10%;
@@ -128,11 +124,11 @@ header a:hover{
 .button{
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 50%;
     height: 30px;
     margin-bottom: 10%;
-    color: grey;
-    background-color: white;
+    border: solid black 1px;
 }
 
 .CTASection button:hover{
@@ -149,22 +145,24 @@ hr{
 }
 
 .content{
-    /* display: inline-block;
-    position: relative; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .contentCard1, .contentCard2{
+    flex-direction: column;
     width: 48%;
-    display: inline-block;
-    margin: 4% 7px;
+    margin: 3% 7px;
+    margin-left: 0;
+    line-height: 1.2;
 }
 
 .contentCard3, .contentCard4, .contentCard5{
     width: 32%;
-    display: inline-block;
     margin: 4% 4px;
+    margin-left: 0;
+    line-height: 1.2;
 }
 
 .middle-img {
@@ -194,15 +192,13 @@ address{
     line-height: 2;
 }
 
-p {
-    line-height: 1.2;
-}
-
 /* tablet view */
 
 @media (max-width:800px){
     body{
-        margin: 0 3%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-bottom: 100%;
     }
 
     .image{
@@ -212,7 +208,7 @@ p {
     header{
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 5%;
+    padding-top: 3%;
     background-color: white;
     }
 
@@ -221,15 +217,28 @@ p {
         padding-bottom: 4%;
     }
 
-    nav{
-        display: flex;
-        justify-content: center;       
-        /* margin-right: 190px;  */
-        /* padding-right: 400px;  */
+    header nav{
+        width: 100%;
     }
 
-    nav a{
-        /* display: flex;
-        justify-content: center; */
+    .CTASection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .contentCard3, .contentCard4, .contentCard5{
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        margin: 4% 4px;
+        margin-left: 0;
+        padding-right: 5px;
+        line-height: 1.2;
+    }
+
+    .copyright{
+        margin-top: 50px;
     }
 }
